@@ -1,0 +1,70 @@
+/* Body */
+.navbar{
+    padding-top:10px;
+    padding-bottom:10px;
+    border-bottom: solid 2px black;
+    text-align: right;
+}
+
+.navbar-light .navbar-text {
+color: rgb(0, 0, 0);
+}
+
+.jumbotron-fluid{
+text-align: center;
+border-bottom: solid 2px black;
+}
+
+.center{
+    justify-content: center;
+}
+
+.container{
+    margin-top: 10px;
+}
+
+.hour {
+    border: solid 2px black;
+    text-align: center;
+}
+
+.task {
+    border: solid 1px black;
+    text-align: center;
+}
+
+h3{
+    margin:8px;
+}
+
+
+.time-block-present .task{
+background-color: rgba(255, 34, 34, 0.493);
+}
+
+.time-block-past .task{
+background-color: gray;
+}
+
+.time-block .task{
+background-color: rgba(48, 252, 48, 0.568);
+    
+}
+
+.last{
+    margin-bottom: 50px;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    background-color:rgb(241, 240, 240);
+    color:rgb(0, 0, 0);
+    border-top: solid 2px black;
+    padding-top: 18px;
+    padding-bottom: 12px;
+    font-size: smaller;
+    position: absolute;
+    width: 100%;
+}
+
