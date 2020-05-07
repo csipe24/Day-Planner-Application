@@ -1,5 +1,7 @@
+timeBlock();
+
 // Post Current Date onto Jumbotron
-var dateEl = $("#date")
+var dateEl = $("#date");
 $(dateEl).text(moment().format("dddd, MMMM Do"));
 
 // Save Tasks for each hour with local storage 
@@ -33,28 +35,30 @@ localStorage.setItem("tasks",JSON.stringify(tasks));
 });
 
 
-// // Define Render Tasks
-// function renderTasks (){
-// };
-    
-
-
 // Getting Current Hour of Day
 // * Determine if each hour block is past, preset or future
-var hourBlocks = $("#hour"),
-    currentHour = moment().hour(Number);
-    console.log(currentHour);
 
-//     -Getting current hour moment().hour()
+function timeBlock(){
+ 
+
+    $("textarea").each(function(index){
+        currentHour = (moment().format("k")-1);
+        $("#currentHour").text("Hour: " + currentHour);
+        console.log(JSON.parse(currentHour));
+    
+        hourBlocks = $(this).data("hour");
+        console.log(hourBlocks);
+
+        if (hourBlocks < currentHour) {
+        $(this).css("background-color", "gray");
+        console.log("THIS IS IN THE PAST");
+        }
+                
+        else if (hourBlocks === currentHour) {
+        $(this).css("background-color", "red");
+        console.log("THIS IS NOW");
+        };
+    })
+};
 
 
-//     -in html build a similar class name $(".classname) to get all hour blocks.
-
-
-//     Jquery.Each loop over elements
-
-
-//      hourBlocks.each(function(index)){
-//         var myCurrentBlock = $(this).val;
-// //         using THIS my current block element.
-//         data-hour="9";

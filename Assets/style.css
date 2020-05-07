@@ -37,15 +37,6 @@ h3{
     margin:8px;
 }
 
-
-.time-block-present .task{
-background-color: rgba(255, 34, 34, 0.493);
-}
-
-.time-block-past .task{
-background-color: gray;
-}
-
 .time-block .task{
 background-color: rgba(48, 252, 48, 0.568);
     
