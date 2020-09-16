@@ -1,8 +1,4 @@
-README.md
-
 # Day Planner
-Homework Assignment #5
-
 Welcome to our day planner application! This is a great web application to organize your daily to do list at work!
 
 Our day planner app will tell you todays date so you can be sure you are on the right day.
